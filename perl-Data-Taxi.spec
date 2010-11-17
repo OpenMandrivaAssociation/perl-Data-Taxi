@@ -1,5 +1,5 @@
 %define upstream_name    Data-Taxi
-%define upstream_version 0.95
+%define upstream_version 0.96
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -10,8 +10,7 @@ License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
-
-
+BuildRequires: perl(Debug::ShowStuff)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
