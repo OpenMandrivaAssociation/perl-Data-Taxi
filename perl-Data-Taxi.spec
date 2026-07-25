@@ -2,14 +2,14 @@
 %define upstream_version 0.96
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Taint-aware, XML-ish data serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Data-Taxi
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKO/Data-Taxi-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Debug::ShowStuff)
